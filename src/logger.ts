@@ -50,9 +50,9 @@ io.on('connection', (socket) => {
   app.post(
     '/logger',
     basicAuth(process.env.HTTP_AUTH_USER, process.env.HTTP_AUTH_PASSWORD),
-    async (req, res) => {
+    (req, res) => {
       try {
-        await fs.appendFile(`${__dirname}/logs/${moment().format('DD.MM.YYYY')}.log`, req.body.dataLog + '\n');
+        fs.appendFileSync(`${__dirname}/logs/${moment().format('DD.MM.YYYY')}.log`, req.body.dataLog + '\n');
         socket.broadcast.emit('get-log', req.body.dataLog);
         res.send({
           saved: true
