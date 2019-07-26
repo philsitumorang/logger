@@ -21,6 +21,12 @@ You can set login/password to protect api requests and set port in `variables.en
 **HTTP_AUTH_USER**=logger<br/>
 **HTTP_AUTH_PASSWORD**=rt4241gg<br/>
 
+Install as Docker Image
+```bash
+docker pull philsitumorang/light-logger
+```
+[https://hub.docker.com/r/philsitumorang/light-logger](https://hub.docker.com/r/philsitumorang/light-logger)
+
 ### API
 - GET  "/" - main page with logs
 - GET  "/logger/{dd.mm.yyyy} - get logs of day
