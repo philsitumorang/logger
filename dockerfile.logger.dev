@@ -1,0 +1,9 @@
+FROM node:12.4.0-alpine
+RUN apk add --update python python-dev py-pip build-base
+RUN npm config set unsafe-perm true
+RUN /bin/sh -c "apk add --no-cache bash nano"
+RUN mkdir -p /service/project/src
+WORKDIR /service
+COPY package.json /service
+RUN npm install && npm install -g pm2 ts-node typescript
+CMD npm run start-dev

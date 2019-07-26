@@ -1,0 +1,29 @@
+{
+  "name": "crawler",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.11",
+    "mkdirp": "0.5.1",
+    "moment": "2.24.0",
+    "socket.io": "2.2.0",
+    "socket.io-client": "2.2.0",
+    "mongoose-float": "1.0.4",
+    "express": "4.16.4",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "helmet": "3.20.0",
+    "basic-auth-connect": "1.0.0"
+  },
+  "scripts": {
+    "start-local": "ts-node-dev --ignore-watch node_modules ./src/logger.ts",
+    "start-dev": "tsc ./src/logger.ts && pm2 start ./src/logger.js --no-daemon --name logger"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "@types/socket.io": "2.1.2",
+    "@types/socket.io-client": "1.4.32",
+    "@types/mongoose": "5.3.23",
+    "@types/axios": "0.14.0"
+  }
+}

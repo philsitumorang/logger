@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js"></script>
+        <script src="//code.jquery.com/jquery-3.4.0.min.js"></script>
+        <style>
+            body {
+                min-height: 100vh;
+            }
+            * {
+                color: #ececec !important;
+                background: #171717;
+                font-family: 'Monaco', 'Menlo', 'Roboto mono', 'monospace', 'sans-serif', 'Ubuntu Monospace'
+            }
+            .buttons {
+                background: #ececec;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                padding: 10px;
+            }
+            .buttons button {
+                position: relative;
+                border: 0;
+                background: #333;
+                color: #fff;
+                font-size: 12px;
+                padding: 7px 15px;
+            }
+            #logs {
+                font-size: 12px;
+                line-height: 1.3em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logs"></div>
+        <div class="buttons">
+            <button type="button" onClick="window.autoscroll = true">start autoscroll</button>
+            <button type="button" onClick="window.autoscroll = false">stop autoscroll</button>
+        </div>
+        <script>
+          window.autoscroll = true;
+            const socket = io();
+            socket.on('get-log', (data) => {
+              $('#logs').append('<div>' + JSON.stringify(data) + '</div>');
+              if (window.autoscroll)
+                window.scrollTo(0, 812738127938182738912);
+            });
+        </script>
+    </body>
+</html>
