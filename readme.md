@@ -23,5 +23,5 @@ You can set login/password to protect api requests and set port in `variables.en
 
 
 ### Who use Light Logger
-[tokenrating.wavesexplorer.com]("http://tokenrating.wavesexplorer.com") - Blockchain voting of tokens.
-[oracles.wavesexplorer.com]("http://oracles.wavesexplorer.com") - Create blockchain oracle for dAPP.
+[tokenrating.wavesexplorer.com](https://tokenrating.wavesexplorer.com) - Blockchain voting of tokens.
+[oracles.wavesexplorer.com](https://oracles.wavesexplorer.com) - Create blockchain oracle for dAPP.
