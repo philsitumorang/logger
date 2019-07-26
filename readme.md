@@ -26,6 +26,7 @@ You can set login/password to protect api requests and set port in `variables.en
 - GET  "/logger/{dd.mm.yyyy} - get logs of day
 - POST "/logger", BODY: { dataLog: string } - save log
 - Socket.io request - socket.emit('save-log', `some string data`)
+All requests calls with http_basic_auth
 
 ### Who use Light Logger
 [tokenrating.wavesexplorer.com](https://tokenrating.wavesexplorer.com) - Blockchain voting of tokens.<br/>
