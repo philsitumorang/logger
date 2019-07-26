@@ -23,7 +23,7 @@ You can set login/password to protect api requests and set port in `variables.en
 
 Install as Docker Image
 ```bash
-docker pull philsitumorang/light-logger
+docker pull philsitumorang/light-logger:v1.0.0
 ```
 [https://hub.docker.com/r/philsitumorang/light-logger](https://hub.docker.com/r/philsitumorang/light-logger)
 
