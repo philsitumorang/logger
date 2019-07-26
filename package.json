@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "4.17.11",
-    "mkdirp": "0.5.1",
-    "moment": "2.24.0",
-    "socket.io": "2.2.0",
-    "socket.io-client": "2.2.0",
-    "mongoose-float": "1.0.4",
-    "express": "4.16.4",
+    "basic-auth-connect": "1.0.0",
     "body-parser": "1.19.0",
     "cors": "2.8.5",
+    "express": "4.16.4",
     "helmet": "3.20.0",
-    "basic-auth-connect": "1.0.0"
+    "lodash": "^4.17.15",
+    "mkdirp": "0.5.1",
+    "moment": "2.24.0",
+    "mongoose-float": "1.0.4",
+    "socket.io": "2.2.0",
+    "socket.io-client": "2.2.0"
   },
   "scripts": {
     "start-local": "ts-node-dev --ignore-watch node_modules ./src/logger.ts",
