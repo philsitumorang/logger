@@ -17,11 +17,11 @@ $ docker build . --tag logger
 $ docker run -p 4000:4000 -it logger
 ```
 You can set login/password to protect api requests and set port in `variables.env`
-- **PORT**=4000
-- **HTTP_AUTH_USER**=logger
-- **HTTP_AUTH_PASSWORD**=rt4241gg
+**PORT**=4000<br/>
+**HTTP_AUTH_USER**=logger<br/>
+**HTTP_AUTH_PASSWORD**=rt4241gg<br/>
 
 
 ### Who use Light Logger
-[tokenrating.wavesexplorer.com](https://tokenrating.wavesexplorer.com) - Blockchain voting of tokens.
+[tokenrating.wavesexplorer.com](https://tokenrating.wavesexplorer.com) - Blockchain voting of tokens.<br/>
 [oracles.wavesexplorer.com](https://oracles.wavesexplorer.com) - Create blockchain oracle for dAPP.
