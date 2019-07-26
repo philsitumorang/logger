@@ -16,7 +16,7 @@ You can deploy logger to your machine and send POST requests to save logs.
 $ docker build . --tag logger
 $ docker run -p 4000:4000 -it logger
 ```
-You can set login/password to protect api requests and set port in `variables.env`
+You can set login/password to protect api requests and set port in `variables.env`<br/>
 **PORT**=4000<br/>
 **HTTP_AUTH_USER**=logger<br/>
 **HTTP_AUTH_PASSWORD**=rt4241gg<br/>
