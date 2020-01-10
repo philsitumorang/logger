@@ -10,5 +10,5 @@ COPY package.json /logger
 COPY ./src /logger/src/
 WORKDIR /logger
 RUN npm i && npm i -g ts-node
-RUN npm install -g ts-node-dev typescript
+RUN npm install -g ts-node-dev typescript pm2
 CMD npm run start-dev
