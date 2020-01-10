@@ -1,0 +1,14 @@
+version: '3'
+services:
+  logger:
+    build:
+      context: .
+      dockerfile: ./dockerfile.logger.dev
+    environment: 
+      - PORT=3000
+      - HTTP_AUTH_USER=user
+      - HTTP_AUTH_PASSWORD=123123
+    volumes: 
+      - ./src:/logger/src
+    ports:
+      - 3000:3000
